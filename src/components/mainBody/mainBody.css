@@ -1,0 +1,17 @@
+.mainBody {
+  height: 75vh;
+  padding: 0px;
+  width: 100%;
+  position: relative;
+}
+
+.backgroundImage {
+  width: 22.5vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5%;
+}/*# sourceMappingURL=mainBody.css.map */

@@ -1,0 +1,17 @@
+@use "sass:map";
+$orange-colour:#F5761A;
+
+$colour-scheme: (
+    "orange": #F5761A,
+    "light-silver": rgb(231, 231, 231),
+    "light-gray": rgb(185, 182, 182)
+);
+
+.mainBody{
+    background-image: 
+        linear-gradient(
+            172.5deg,
+            map.get($colour-scheme, "orange") 50%,
+            map.get($colour-scheme, "light-silver") 50%
+        );
+}
