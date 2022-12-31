@@ -1,0 +1,36 @@
+@use "sass:map";
+
+$phoneMax: 600px;
+$tabletMax: 992px;
+
+
+.mainBody{
+    height: 75vh;
+    padding: 0px;
+    width: 100%;
+    position: relative;
+
+    & .backgroundImage{
+        width: 22.5vw;
+        object-fit: cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 0.5%;
+        
+        @media screen and (min-width: $tabletMax) {
+            width: 25vw;
+        }
+        @media only screen and (min-width: $phoneMax) and (max-width: $tabletMax) {
+            width: 30vw;
+        }
+        @media (max-width: $phoneMax) {
+            width: 40vw;
+        }
+    }
+}
+
+
+
+
