@@ -4,8 +4,7 @@
   width: 100%;
   position: relative;
 }
-
-.backgroundImage {
+.mainBody .backgroundImage {
   width: 22.5vw;
   -o-object-fit: cover;
      object-fit: cover;
@@ -14,4 +13,19 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 0.5%;
+}
+@media screen and (min-width: 992px) {
+  .mainBody .backgroundImage {
+    width: 25vw;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .mainBody .backgroundImage {
+    width: 30vw;
+  }
+}
+@media (max-width: 600px) {
+  .mainBody .backgroundImage {
+    width: 40vw;
+  }
 }/*# sourceMappingURL=mainBody.css.map */
