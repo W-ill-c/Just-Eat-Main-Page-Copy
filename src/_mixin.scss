@@ -1,0 +1,13 @@
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+}
+
+@mixin position($y-axis) {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, $y-axis);
+}
