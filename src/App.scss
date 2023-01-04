@@ -1,5 +1,8 @@
 @use "sass:map";
-$bold-font:545;
+
+*{
+    font-family: visby;
+}
 
 $colour-scheme: (
     "orange": #F5761A,
@@ -7,11 +10,30 @@ $colour-scheme: (
     "light-gray": rgb(185, 182, 182)
 );
 
+@function colour($chosenColour){
+    @return map.get($colour-scheme, $chosenColour);
+};
+
 .mainBody{
     background-image: 
         linear-gradient(
             172.5deg,
-            map.get($colour-scheme, "orange") 50%,
-            map.get($colour-scheme, "light-silver") 50%
-        );
+            colour("orange") 50%,
+            colour("light-silver") 50%
+        )
+    ;
+}
+
+.wholeSearchSection{
+    .searchTitle h1{
+        color: colour("orange");
+        // font-weight: $bold-font;
+    }
+    .userInput h1{
+        background-color: colour("orange");
+    }
+}
+
+.footer{
+    height: 400px;
 }

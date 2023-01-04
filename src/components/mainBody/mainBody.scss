@@ -1,7 +1,6 @@
 @use "sass:map";
-
-$phoneMax: 600px;
-$tabletMax: 992px;
+@import '../../mixin';
+@import '../../variables';
 
 
 .mainBody{
@@ -14,10 +13,8 @@ $tabletMax: 992px;
         width: 22.5vw;
         object-fit: cover;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 0.5%;
+        @include position(-50%);
+        border-radius: 6px;
         
         @media screen and (min-width: $tabletMax) {
             width: 25vw;
@@ -30,7 +27,6 @@ $tabletMax: 992px;
         }
     }
 }
-
 
 
 
