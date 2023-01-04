@@ -11,3 +11,8 @@
     top:50%;
     transform: translate(-50%, $y-axis);
 }
+
+@mixin size-padding($font-size) {
+    margin: 22px;;
+    font-size: $font-size;
+}

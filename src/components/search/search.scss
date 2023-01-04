@@ -55,12 +55,14 @@
 
 .searchTitle{
     h1{
-        font-size: $font-size-title;
-        margin: 22px;
+        // font-size: $font-size-title;
+        // margin: 22px;
+        @include size-padding($font-size-title)
     }
 
     h4{
-        font-size: $font-size-sub-title;
-        margin: 22px;
+        // font-size: $font-size-sub-title;
+        // margin: 22px;
+        @include size-padding($font-size-sub-title)
     }
 }
