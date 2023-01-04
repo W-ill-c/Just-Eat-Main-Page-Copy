@@ -1,1 +1,15 @@
-/*# sourceMappingURL=navBar.css.map */
+.navBar {
+  background-color: white;
+  z-index: 15;
+  width: 100%;
+  height: 10vh;
+}
+
+.navButtons {
+  background: transparent;
+  border: none;
+  font-size: 1.07rem;
+}
+.navButtons:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=navBar.css.map */

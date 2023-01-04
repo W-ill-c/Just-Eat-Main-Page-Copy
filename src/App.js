@@ -1,6 +1,7 @@
 import './App.scss';
-import MainBody from './components/mainBody/mainBody'
-import './components/mainBody/mainBody.scss'
+import MainBody from './components/mainBody/mainBody';
+import './components/mainBody/mainBody.scss';
+import './components/navBar/navBar.scss';
 
 function App() {
   return (
