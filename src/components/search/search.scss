@@ -3,6 +3,7 @@
 @import '../../mixin';
 
 .wholeSearchSection{
+
     z-index: $z-index;
     border-radius: 12.5px;
     @include position(30%);
@@ -51,6 +52,27 @@
         border-radius: $border-radius;
         // width: 85px;
     }
+    
+    
+    @media only screen and (max-width: $tabletMax){
+        width: 85%;
+        height: 280px;
+
+        form {
+            width: 485px;
+        }
+        
+    }
+    
+    @media only screen and (max-width: $phoneMax){ 
+        width: 85%;
+    
+        form {
+            width: 370px;
+        }
+        
+    }
+
 }
 
 .searchTitle{

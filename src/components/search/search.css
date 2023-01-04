@@ -55,6 +55,23 @@
   font-size: 1.4rem;
   border-radius: 35px;
 }
+@media only screen and (max-width: 992px) {
+  .wholeSearchSection {
+    width: 85%;
+    height: 280px;
+  }
+  .wholeSearchSection form {
+    width: 485px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .wholeSearchSection {
+    width: 85%;
+  }
+  .wholeSearchSection form {
+    width: 370px;
+  }
+}
 
 .searchTitle h1 {
   margin: 22px;
