@@ -1,1 +1,82 @@
-/*# sourceMappingURL=search.css.map */
+.wholeSearchSection {
+  z-index: 15;
+  border-radius: 12.5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 30%);
+  text-align: center;
+  box-shadow: 0px 0px 10px rgb(148, 147, 147);
+  background-color: white;
+  width: 55%;
+  height: 250px;
+  padding: 5px;
+}
+.wholeSearchSection form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 420px;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 0.25px;
+  border-color: rgb(148, 147, 147);
+  border-radius: 35px;
+  height: 65px;
+  padding: 0px 2px 0px 12px;
+}
+.wholeSearchSection label {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.wholeSearchSection input {
+  border: 0;
+  height: 3rem;
+  font-size: 1.2rem;
+}
+.wholeSearchSection input:focus {
+  outline: none;
+}
+.wholeSearchSection input::-moz-placeholder {
+  font-size: 1rem;
+}
+.wholeSearchSection input:-ms-input-placeholder {
+  font-size: 1rem;
+}
+.wholeSearchSection input::placeholder {
+  font-size: 1rem;
+}
+.wholeSearchSection h1 {
+  padding: 13px 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.4rem;
+  border-radius: 35px;
+}
+@media only screen and (max-width: 992px) {
+  .wholeSearchSection {
+    width: 85%;
+    height: 280px;
+  }
+  .wholeSearchSection form {
+    width: 485px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .wholeSearchSection {
+    width: 85%;
+  }
+  .wholeSearchSection form {
+    width: 370px;
+  }
+}
+
+.searchTitle h1 {
+  margin: 22px;
+  font-size: 1.9rem;
+}
+.searchTitle h4 {
+  margin: 22px;
+  font-size: 1.2rem;
+}/*# sourceMappingURL=search.css.map */

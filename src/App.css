@@ -1,3 +1,22 @@
+* {
+  font-family: visby;
+}
+
 .mainBody {
   background-image: linear-gradient(172.5deg, #F5761A 50%, rgb(231, 231, 231) 50%);
+}
+
+.wholeSearchSection .searchTitle h1 {
+  color: #F5761A;
+}
+.wholeSearchSection .userInput h1 {
+  background-color: #F5761A;
+}
+
+.footer {
+  height: 400px;
+}
+
+.navTitle h1 {
+  color: #F5761A;
 }/*# sourceMappingURL=App.css.map */
