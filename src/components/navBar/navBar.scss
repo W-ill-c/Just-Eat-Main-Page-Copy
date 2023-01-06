@@ -16,6 +16,10 @@
         flex-shrink: 1;
     }
 
+    @media screen and (max-width: 600px){
+        flex-direction: row-reverse;
+    }
+
 }
 
 .navTitle{
@@ -28,7 +32,13 @@
 .navButtonsSection{
     @include flex;
     justify-content:space-evenly;
-    .navButtons{
+
+    @media screen and (max-width: 600px){
+        justify-content: start;
+    }
+
+
+    & .navButtons{
         background: transparent;
         border: none;
         font-size: 1.07rem;
@@ -40,8 +50,55 @@
             border-radius: $border-radius;
             background-color: $light-gray;
         }
+
+        @media screen and (max-width: 600px){
+            display: none;
+        }
     
+    }
+
+    & .listNav{
+        @media screen and (min-width: 600px){
+            display: none;
+        }
+    
+        @media screen and (max-width: 600px){
+            font-size: $font-size-title;
+            cursor: pointer;
+        }
     }
 }
 
 
+
+
+.navButtonsSectionActive{
+    height: 80vh;
+    position: absolute;
+    left:0;
+    top: 13vh;
+    right: 0;
+    @include flex; 
+    flex-direction: column;
+    z-index: 20;
+    background-color: white;
+
+    & .navButtons{
+        background: transparent;
+        border: none;
+        font-size: 1.07rem;
+        height: 42.5px;
+        padding: 0px 8px;
+    }
+}
+
+
+.exitNav{
+    @media screen and (min-width: 600px){
+        display: none;
+    }
+
+    @media screen and (max-width: 600px){
+        cursor: pointer;
+    }
+}

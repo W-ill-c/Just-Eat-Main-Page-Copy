@@ -24,6 +24,7 @@
   border-radius: 35px;
   height: 65px;
   padding: 0px 2px 0px 12px;
+  justify-content: space-between;
 }
 .wholeSearchSection label {
   width: -webkit-fit-content;
