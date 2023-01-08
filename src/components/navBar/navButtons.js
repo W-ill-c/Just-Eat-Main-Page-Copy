@@ -9,7 +9,7 @@ import { BsList, BsLock } from "react-icons/bs";
 import { BsXLg } from "react-icons/bs";
 
 export default function NavButtons(){
-    
+
     const[openSideBar, setOpenSideBar] = useState(false);
 
     window.onresize = ()=>{

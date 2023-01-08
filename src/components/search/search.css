@@ -39,6 +39,36 @@
 .wholeSearchSection input:focus {
   outline: none;
 }
+.wholeSearchSection input:focus::-moz-placeholder {
+  display: block;
+  position: relative;
+  bottom: 18px;
+}
+.wholeSearchSection input:focus:-ms-input-placeholder {
+  display: block;
+  position: relative;
+  bottom: 18px;
+}
+.wholeSearchSection input:focus::placeholder {
+  display: block;
+  position: relative;
+  bottom: 18px;
+}
+.wholeSearchSection input:active::-moz-placeholder {
+  display: block;
+  position: relative;
+  bottom: 18px;
+}
+.wholeSearchSection input:active:-ms-input-placeholder {
+  display: block;
+  position: relative;
+  bottom: 18px;
+}
+.wholeSearchSection input:active::placeholder {
+  display: block;
+  position: relative;
+  bottom: 18px;
+}
 .wholeSearchSection input::-moz-placeholder {
   font-size: 1rem;
 }

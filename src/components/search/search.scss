@@ -37,8 +37,20 @@
         font-size: 1.2rem;
     }
 
-    input:focus{
+    input:focus {
         outline: none;
+    }
+
+    input:focus::placeholder{
+        display:block;
+        position: relative;
+        bottom: 18px;
+    }
+
+    input:active::placeholder{
+        display:block;
+        position: relative;
+        bottom: 18px;
     }
 
     input::placeholder{
