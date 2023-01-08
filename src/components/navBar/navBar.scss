@@ -1,0 +1,108 @@
+@import '../../variables';
+
+@import '../../mixin';
+
+.navBar{
+    background-color: white;
+    z-index: $z-index;
+    height: 13vh;
+    box-shadow: 0px 0px 10px 5px $dark-gray;
+    @include flex; 
+    // gap: 0.5rem;
+    padding: 0px 12px;
+
+    & > *{
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    @media screen and (max-width: 600px){
+        flex-direction: row-reverse;
+    }
+
+}
+
+.navTitle{
+    h1{
+        font-size: $font-size-title;
+        cursor: pointer;
+    }
+}
+
+
+.navButtonsSection{
+    @include flex;
+    justify-content:space-evenly;
+
+    @media screen and (max-width: 600px){
+        justify-content: start;
+    }
+
+
+    & .navButtons{
+        background: transparent;
+        border: none;
+        font-size: 1.07rem;
+        height: 42.5px;
+        padding: 0px 8px;
+    
+        &:hover{
+            cursor: pointer;
+            border-radius: $border-radius;
+            background-color: $light-gray;
+        }
+
+        @media screen and (max-width: 600px){
+            display: none;
+        }
+    
+    }
+
+    & .listNav{
+        @media screen and (min-width: 600px){
+            display: none;
+        }
+    
+        @media screen and (max-width: 600px){
+            font-size: $font-size-title;
+            cursor: pointer;
+        }
+    }
+}
+
+.navButtonsSectionActive{
+    height: 80vh;
+    position: absolute;
+    left:0;
+    top: 13vh;
+    right: 0;
+    @include flex; 
+    flex-direction: column;
+    z-index: 20;
+    background-color: white;
+    align-items: flex-start;
+    padding: 0px 12px;
+
+    & .navButtons{
+        background: transparent;
+        font-size: 1.07rem;
+        height: 42.5px;
+        width: 220px;
+        padding: 0px;
+        border-style: solid;
+        border-color: $light-gray;
+        border-width: 0px 0px 2px 0px;
+        text-align: left;
+    }
+}
+
+
+.exitNav{
+    @media screen and (min-width: 600px){
+        display: none;
+    }
+
+    @media screen and (max-width: 600px){
+        cursor: pointer;
+    }
+}

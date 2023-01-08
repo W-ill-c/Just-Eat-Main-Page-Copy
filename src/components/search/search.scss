@@ -24,6 +24,7 @@
         border-radius: $border-radius;
         height: 65px;
         padding: 0px 2px 0px 12px;
+        justify-content:space-between;
     }
 
     & label{
@@ -36,8 +37,20 @@
         font-size: 1.2rem;
     }
 
-    input:focus{
+    input:focus {
         outline: none;
+    }
+
+    input:focus::placeholder{
+        display:block;
+        position: relative;
+        bottom: 18px;
+    }
+
+    input:active::placeholder{
+        display:block;
+        position: relative;
+        bottom: 18px;
     }
 
     input::placeholder{
